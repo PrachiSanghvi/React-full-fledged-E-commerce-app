@@ -1,0 +1,16 @@
+{% layout none %}
+{
+	"product": {{ product | json }},
+	"options": [
+		{% for product_option in product.options_with_values  %}
+			{
+				"name": "{{ product_option.name }}",
+				"values": [
+					{% for value in product_option.values %}
+							"{{ value }}" {% unless forloop.last %},{% endunless %}
+					{% endfor %}
+				]
+			}{% unless forloop.last %},{% endunless %}
+		{% endfor %}
+	]
+}

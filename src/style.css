@@ -1,0 +1,87 @@
+.redux-practice header {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+
+.redux-practice header a {
+  width: 20%;
+}
+.redux-practice header nav {
+  width: 80%;
+}
+.redux-practice header nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.redux-practice header nav ul li {
+  padding: 10px;
+}
+.redux-practice header nav ul li a {
+  text-decoration: none;
+}
+.redux-practice header nav ul li a:active {
+  color: blueviolet;
+}
+.home-page-wrapper .search-form {
+  padding-top: 8px;
+}
+/* .my-website-userdata {
+
+} */
+
+/* Product page */
+.product-section-wrapper {
+  display: flex;
+}
+.product-section-wrapper .left-side-image-section {
+  width: 50%;
+  float: left;
+  padding: 10px 60px;
+}
+.product-section-wrapper .right-side-product-info {
+  width: 50%;
+  float: right;
+  padding: 10px 60px;
+}
+.product-section-wrapper .left-side-image-section img {
+  width: -webkit-fill-available;
+}
+.product-section-wrapper .right-side-product-info .prod-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+.product-section-wrapper .right-side-product-info .prod-price  {
+  padding-top: 10px;
+}
+.prod-atc-wrapper .prod-atc-btn {
+  padding: 10px 60px;
+  background: black;
+  color: white;
+  margin: 15px 0px;
+}
+.sideCart {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  top: 100px;
+  bottom: 0;
+  padding: 0 15px 15px;
+  max-width: 95%;
+  z-index: 10;
+  color: white;
+  background-color: black;
+  transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+.sideCart.active {
+  display: block;
+}
+.sidecart-header {
+
+}
+.sidecart-data {
+
+}
